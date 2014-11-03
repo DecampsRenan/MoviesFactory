@@ -1,0 +1,28 @@
+@import 'const';
+
+#rendu {
+	cursor: crosshair;
+	background-image: url("paris.jpg");
+	display: block;
+}
+
+#hori-guide,
+#vert-guide {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+}
+
+#hori-guide {
+	height: 1px;
+	width: 8px;
+	background-image: url("@{img_path}/horizontal-dash.svg");
+	background-repeat: repeat-x;
+}
+
+#hori-guide {
+	height: 8px;
+	width: 1px;
+	background-image: url('@{img_path}/vertical-dash.svg');
+	background-repeat: repeat-y;
+}

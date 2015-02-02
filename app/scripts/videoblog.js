@@ -66,7 +66,7 @@ define(function(require, exports, module) {
 			var r = frame.data[i + 0];
 			var g = frame.data[i + 1];
 			var b = frame.data[i + 2];
-			if (isAllowed(r, g, b, 50))
+			if (isAllowed(r, g, b, 80))
 				frame.data[i + 3] = 0;
 		}
 		ctx.putImageData(frame, 0, 0);
@@ -109,7 +109,6 @@ define(function(require, exports, module) {
 	document.querySelector('#mainContainer').appendChild(color);
 	document.querySelector('#mainContainer').appendChild(cbLabel);
 	document.querySelector('#mainContainer').appendChild(checkbox);
-
 	// webcam
 	
 });
